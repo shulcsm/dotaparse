@@ -1,0 +1,5 @@
+[package]
+
+name = "dotaparse"
+version = "0.0.1"
+authors = ["Mārtiņš Šulcs <shulcsm@gmail.com>"]

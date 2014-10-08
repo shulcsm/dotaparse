@@ -1,0 +1,12 @@
+[root]
+name = "dotaparse"
+version = "0.0.1"
+dependencies = [
+ "protobuf 0.0.1 (git+https://github.com/stepancheg/rust-protobuf.git#d1d509fff49212cecd2e3266ebd7060adfc8f3cb)",
+]
+
+[[package]]
+name = "protobuf"
+version = "0.0.1"
+source = "git+https://github.com/stepancheg/rust-protobuf.git#d1d509fff49212cecd2e3266ebd7060adfc8f3cb"
+
