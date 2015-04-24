@@ -6,4 +6,5 @@ authors = ["Mārtiņš Šulcs <shulcsm@gmail.com>"]
 
 [dependencies]
 docopt = "*"
-rustc-serialize = "*" 
+rustc-serialize = "*"
+byteorder = "*"

@@ -2,9 +2,15 @@
 name = "dotaparse"
 version = "0.0.1"
 dependencies = [
+ "byteorder 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "docopt 0.6.62 (registry+https://github.com/rust-lang/crates.io-index)",
  "rustc-serialize 0.3.13 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "byteorder"
+version = "0.3.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "docopt"
