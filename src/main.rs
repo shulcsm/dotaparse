@@ -1,9 +1,9 @@
-extern crate "rustc-serialize" as rustc_serialize;
+extern crate rustc_serialize;
 extern crate docopt;
 
 use docopt::Docopt;
 use std::path::Path;
-use std::io::{Read, ReadExt, BufReader, BufStream};
+use std::io::{Read, BufReader, BufStream};
 use std::fs::File;
 
 
@@ -22,14 +22,13 @@ fn main() {
                             .unwrap_or_else(|e| e.exit());
     println!("{:?}", args);
 
-	let mut f = File::open(&args.arg_file).unwrap();
-	let mut stream = BufStream::new(f);
-	let mut reader = BufReader::new(stream);
+	let f = File::open(&args.arg_file).unwrap();
+	let stream = BufStream::new(f);
+	let reader = BufReader::new(stream);
 
 	let mut header = String::new();
 	reader.take(8).read_to_string(&mut header);
-	assert!("PBUFDEM\0" == header, "Doesn't look like a protobuf file.");
+	assert!("PBUFDEM\0" == header, "Doesn't look like a scrds demo file.");
 
 	println!("{:?}", header);
-    println!("Hello, world!")
 }
