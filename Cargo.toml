@@ -8,3 +8,5 @@ authors = ["Mārtiņš Šulcs <shulcsm@gmail.com>"]
 docopt = "*"
 rustc-serialize = "*"
 byteorder = "*"
+protobuf = "*"
+snap = "*"
